@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="css/playlists.css">
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/myjs.js"></script>
+<script>
+	$(function(){
+		$('.s2>li').hover(function(event){
+		n=$(this).index();
+		$('.s2 li img').eq(n).stop().animate({'width':'220px','height':'220px','margin-left':'-5px','margin-top':'-5px'},100);
+		},function(event){
+			$('.s2 li img').css({'width':'210px','height':'210px','margin-left':'0px','margin-top':'0px'})
+		})
+	})
+</script>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="platform">
+		<ul>
+			<li>
+				<span class="icon_window"></span>
+			</li>
+			<li>
+				<span class="icon_android"></span>
+			</li>
+			<li>
+				<span class="icon_iphone"></span>
+			</li>
+			<li>
+				<span class="icon_up"></span>
+			</li>
+		</ul>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="logo"><img src="images/dac7499.png" alt=""></div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#">发现音乐</a>
+					</li>
+					<li>
+						<a href="#">下载客户端</a>
+					</li>
+					<li>
+						<a href="#">音乐现场</a>
+					</li>
+					<li>
+						<a href="#">VIP会员</a>
+					</li>
+					<li>
+						<a href="#">酷我耳机</a>
+					</li>
+					<li>
+						<a href="#">更多<span class="icon"></span>
+							<ul class="sub-nav">
+								<li>腾讯音乐人</li>
+								<li>HiFi音乐</li>
+								<li>主播电台</li>
+								<li>酷我视频</li>
+								<li></li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="search">
+				<div class="wrap">
+					<span class="icon2">
+					    <input type="text" placeholder="搜索音乐/MV/歌单/歌手">
+						<ul class="nav-list">
+							<p class="p1">大家都在搜</p>
+							<li>
+								<span class="icon3">1</span><a href="#">你的答案</a>
+							</li>
+							<li>
+								<span class="icon4">2</span><a href="#">周深</a>
+							</li>
+							<li>
+								<span class="icon5">3</span><a href="#">蒙面唱将猜猜猜</a>
+							</li>
+							<li>
+								<span class="icon6">4</span><a href="#">我们的歌</a>
+							</li>
+							<li>
+								<span class="icon6">5</span><a href="#">邓紫棋专访</a>
+							</li>
+							<li>
+								<span class="icon6">6</span><a href="#">跨界歌王</a>
+							</li>
+							<li>
+								<span class="icon6">7</span><a href="#">抖音热梗</a>
+							</li>
+							<li>
+								<span class="icon6">8</span><a href="#">这首歌在抖音火了</a>
+							</li>
+							<li>
+								<span class="icon6">9</span><a href="#">Aimer</a>
+							</li>
+							<li>
+								<span class="icon6">10</span><a href="#">生活因你而火热</a>
+							</li>
+						</ul>
+					</span>
+				</div>	
+			</div>
+			<input type="submit" class="login" value="登录 / 注册">	
+		</div>
+	</header>
+	<div class="container">
+		<div class="sub-nav1">
+			<ul>
+				<li><a href="index.htm">推荐</a></li>
+				<li><a href="rank_list.html">排行榜</a></li>
+				<li><a href="singers.html">歌手</a></li>
+				<li><a href="playlists.html" class="a1">歌单</a></li>
+				<li><a href="mvs.html">MV</a></li>
+			</ul>
+	    </div>
+	    <div style="clear: both"></div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<h1>精选歌单<span class="icon"></span></h1>
+			<ol class="s1">
+				<li class="a1">最新</li>
+				<li>最热</li>
+			</ol>
+			<div style="clear: both"></div>
+			<ul class="s2">
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/301.jpg" alt="">
+					</div>
+					<span class="fonts" title="燃烧卡路里！冬天听这个减肥一点都不南">燃烧卡路里！冬天听这个减肥一点都不南</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/302.jpg" alt="">
+					</div>
+					<span class="fonts" title="助眠轻音｜沉醉梦乡，静心安眠">助眠轻音｜沉醉梦乡，静心安眠</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/303.jpg" alt="">
+					</div>
+					<span class="fonts" title="Dub Techno—幻境迷雾，回响科技">Dub Techno—幻境迷雾，回响科技</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/304.jpg" alt="">
+					</div>
+					<span class="fonts" title="我的未来，再也无关于你">我的未来，再也无关于你</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/305.jpg" alt="">
+					</div>
+					<span class="fonts" title="古风暗恋 | 百媚千红不如你笑靥">古风暗恋 | 百媚千红不如你笑靥</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/306.jpg" alt="">
+					</div>
+					<span class="fonts" title="每天提升正能量，心中充满小太阳">每天提升正能量，心中充满小太阳</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/307.jpg" alt="">
+					</div>
+					<span class="fonts" title="（经典老歌）你的声音伴我长大，助我闯荡四方">（经典老歌）你的声音伴我长大，助我闯荡四方</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/308.jpg" alt="">
+					</div>
+					<span class="fonts" title="催泪向——日系触心伤感歌声">催泪向——日系触心伤感歌声</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/309.jpg" alt="">
+					</div>
+					<span class="fonts" title="冬日出行｜撑起能量小宇宙">冬日出行｜撑起能量小宇宙</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/310.jpg" alt="">
+					</div>
+					<span class="fonts" title="邂逅异域风情，朗朗上口小旋律">邂逅异域风情，朗朗上口小旋律</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/311.jpg" alt="">
+					</div>
+					<span class="fonts" title="【纯音乐】工作劳累？试试给耳朵按摩一下">【纯音乐】工作劳累？试试给耳朵按摩一下</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/312.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/313.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/314.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/315.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/316.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/317.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/318.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/319.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/320.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/321.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/322.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/323.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/324.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/325.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/326.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/327.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/328.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/329.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+				<li>
+					<div class="cover">
+						<span class="mark">
+							<span class="iconfont1"></span>
+						</span>
+						<img src="images/330.jpg" alt="">
+					</div>
+					<span class="fonts" title="Future Bounce—随性摇摆，弹力空间">Future Bounce—随性摇摆，弹力空间</span>
+					<p class="iconfont">19606.0万</p>
+				</li>
+			</ul>
+			<div class="sub_nav2">
+				<ul>
+					<li class="left"></li>
+					<span class="a2">1</span>
+					<span>2</span>
+					<span>...</span>
+					<span>211</span>
+					<li class="right"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		
+		<div class="f-part1">
+			<div class="container">
+				<div class="f-left">
+					<h4>下载酷我音乐客户端</h4>
+					<ul>
+						<li><span class="win1"></span><p>pc版</p></li>
+						<li><span class="and1"></span><p>Android</p></li>
+						<li><span class="iph1"></span><p>iPhone版</p></li>
+					</ul>
+				</div>
+				<div class="f-center">
+					<h4>协议与声明</h4>
+					<em>用户服务协议</em>
+					<em>免责声明</em>
+					<em>隐私政策</em>
+					<em>权力声明</em>
+				</div>
+				<div class="f-right">
+					<h4>其它</h4>
+					<strong>联系我们</strong>
+					<strong>腾讯音乐</strong>
+					<strong>诚聘英才</strong>
+					<strong>广告服务</strong>
+					<strong class="st-l">未成年人家长监护工程</strong>
+				</div>	
+			</div>
+		</div>
+		<div class="f-part2">
+			<div class="container">
+				<p>
+                   北京酷我科技有限公司版权所有 丨 网络文化经营许可证：
+                   <a href="#">京网文[2015]0525-205号</a>
+                   <a href="#">信息网络传播视听节目许可证0109362号</a> 丨 增值电信业务经营许可证B2-20090418 丨 京ICP证060261号
+                </p>
+                <p>
+                	<a href="#">广播电视节目制作经营许可证京字第2037号</a>
+                	<a href="#">营业性演出许可证京市演1574</a>
+                	<a href="#">京公网安备11010502030216号</a>
+                	京ICP备09014827号
+                </p>
+                <p>举报电话：010-87939949丨 举报邮箱：support@kuwo.cn</p>
+			</div>
+		</div>	
+	</footer>
+</body>
+</html>
